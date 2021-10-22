@@ -33,7 +33,7 @@ export default {
             _this.courses = response.data.data.courses;
             _this.courses.unshift({ cid: -1, courseName: "全部" });
           } else {
-            this.$message({
+            _this.$message({
               showClose: true,
               message: response.data.message,
               type: "error"

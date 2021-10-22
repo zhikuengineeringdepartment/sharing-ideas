@@ -1,10 +1,10 @@
 <!--智库专栏中每一个详细的专栏-->
 <!--这个组件的难点在于长和宽的计算-->
 <template>
-  <a :href="article.link" target="_blank">
+  <a :href="article.articleUrl" target="_blank">
     <div class="article-item">
-      <div>{{article.title}}</div>
-      <img :src="article.img" :alt="article.title" />
+      <div>{{article.articleTitle}}</div>
+      <img :src="article.articlePicUrl" :alt="article.articleTitle" />
     </div>
   </a>
 </template>
@@ -21,9 +21,9 @@ a {
   text-decoration: none;
 
   .article-item {
-    width: 80vw;
+    /*width: 80vw;*/
     height: 15vmin;
-    margin: 0 10vw;
+    /*margin: 0 10vw;*/
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #dcdfe6;

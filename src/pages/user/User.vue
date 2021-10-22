@@ -28,52 +28,50 @@
     </el-col>
     <!--右边栏，是路由界面-->
     <el-col :span="20" class="user-right-router">
-      <router-view/>
+      <router-view />
     </el-col>
   </div>
 </template>
 
 <script>
-  import {routerChange} from "../../tools";
-
-  export default {
-    name: "user",
-    methods: {
-      toUserInfo: function (){
-        routerChange("/user/info", this);
-      },
-      toMessage: function (){
-        routerChange("/user/message", this);
-      },
-      toUpload: function (){
-        routerChange("/user/upload", this);
-      },
-      toDownload: function (){
-        routerChange("/user/download", this);
-      },
-      toCollection: function (){
-        routerChange("/user/collection", this);
-      },
+export default {
+  name: "user",
+  methods: {
+    toUserInfo: function() {
+      this.$fn.routerChange("/user/info", this);
+    },
+    toMessage: function() {
+      this.$fn.routerChange("/user/message", this);
+    },
+    toUpload: function() {
+      this.$fn.routerChange("/user/upload", this);
+    },
+    toDownload: function() {
+      this.$fn.routerChange("/user/download", this);
+    },
+    toCollection: function() {
+      this.$fn.routerChange("/user/collection", this);
     }
   }
+};
 </script>
 
 <style lang="less" scoped>
-  .user-body {
-    padding: 3vmin;
-    display: flex;
-    flex-direction: row;
-    
-    .user-left-selection {
-      margin: 0 auto;
-      
-      span {
-        font-size: 2vmin;
-      }
-    }
-    
-    .user-right-router {
-      padding: 20px;
+.user-body {
+  padding: 3vmin;
+  display: flex;
+  flex-direction: row;
+
+  .user-left-selection {
+    margin: 0 auto;
+
+    span {
+      font-size: 2vmin;
     }
   }
+
+  .user-right-router {
+    padding: 20px;
+  }
+}
 </style>
