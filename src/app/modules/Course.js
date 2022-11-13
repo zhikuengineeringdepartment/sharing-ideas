@@ -29,7 +29,7 @@ export default class Course {
         this.getCourseView()
             .then(sid => {
                 this.setSectionView(sid);
-                this.setCsdn(sid);
+                // this.setCsdn(sid);
             })
             .catch(error => new Vue().$message.warning(error));
     }
@@ -56,14 +56,15 @@ export default class Course {
         })
     }
 
-    setCsdn(sid) {
-        let params = {
-            cid: store.state.course.courseId,
-            sid: sid,
-            vid: store.state.course.versionId
-        };
-        knowledge.queryCsdn(params, response => this._csdn = response.data.csdn)
-    }
+    // setCsdn(sid) {
+    //     console.log("okok")
+    //     let params = {
+    //         cid: store.state.course.courseId,
+    //         sid: sid,
+    //         vid: store.state.course.versionId
+    //     };
+    //     knowledge.queryCsdn(params, response => this._csdn = response.data.csdn)
+    // }
 
     getNoteView(sid) {
         return knowledge

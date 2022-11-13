@@ -1,6 +1,6 @@
 <!--知识见解页面-每门课程组件-->
 <template>
-    <el-card class="knowledge-item" style="width: 300px; height: 312px">
+    <el-card class="knowledge-item" style="width: 300px; height: 320px">
         <div @click="goKnowledgeDetail">
             <img :src="course.courseIcon"/>
             <div>

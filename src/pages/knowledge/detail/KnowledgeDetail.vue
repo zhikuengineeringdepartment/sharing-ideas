@@ -43,7 +43,7 @@
                                 @setSectionView="setSectionView"
                                 @setCsdn="setCsdn"
                         />
-                        <knowledge-section-blog :blog="csdn"/>
+<!--                        <knowledge-section-blog :blog="csdn"/>-->
                     </el-col>
                 </div>
                 <!--电脑端布局-->
@@ -73,7 +73,7 @@
                                 @setSectionView="setSectionView"
                                 @setCsdn="setCsdn"
                         />
-                        <knowledge-section-blog :blog="course.csdn"/>
+<!--                        <knowledge-section-blog :blog="course.csdn"/>-->
                     </div>
                 </div>
             </el-row>
@@ -83,7 +83,7 @@
 
 <script>
     import KnowledgeSection from './KnowledgeSection'
-    import KnowledgeSectionBlog from './KnowledgeSectionBlog'
+    // import KnowledgeSectionBlog from './KnowledgeSectionBlog'
     import KnowledgeSectionNavigator from './KnowledgeSectionNavigator'
     import KnowledgeSectionSelect from './KnowledgeSectionSelect'
     import Course from '../../../app/modules/Course'
@@ -93,7 +93,7 @@
         components: {
             KnowledgeSectionSelect,
             KnowledgeSectionNavigator,
-            KnowledgeSectionBlog,
+            // KnowledgeSectionBlog,
             KnowledgeSection
         },
         data: function () {
@@ -115,9 +115,11 @@
             setSectionView: function (sid) {
                 this.course.setSectionView(sid)
             },
-            setCsdn: function (sid) {
-                this.course.setCsdn(sid)
-            },
+            // setCsdn: function (sid) {
+            //     this.course.setCsdn(sid)
+            // },
+          setCsdn: function () {
+          },
             setNoteView: function (sid) {
                 this.course.setNoteView(sid)
             },
