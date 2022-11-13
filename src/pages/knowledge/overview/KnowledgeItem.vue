@@ -1,6 +1,6 @@
 <!--知识见解页面-每门课程组件-->
 <template>
-    <el-card class="knowledge-item">
+    <el-card class="knowledge-item" style="width: 300px; height: 312px">
         <div @click="goKnowledgeDetail">
             <img :src="course.courseIcon"/>
             <div>
@@ -27,6 +27,6 @@
 <style scoped>
     .knowledge-item {
         float: left;
-        margin: 5vmin;
+        margin: 4vmin;
     }
 </style>

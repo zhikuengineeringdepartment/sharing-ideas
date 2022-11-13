@@ -6,7 +6,7 @@ let http = new Http();
 const login = (params, fn) => http.post("user/login", params, fn)
 
 /**注册*/
-const register = (params, fn) => http.post("/user/registe", params, fn)
+const register = (params, fn) => http.post("/user/register", params, fn)
 
 /**查询已上传文件*/
 const queryUploadRecords = (params, fn) => http.get("user/getUploadRecords", params, fn)

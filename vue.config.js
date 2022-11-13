@@ -6,7 +6,7 @@ module.exports = {
     proxy: {
       '/api': {
         // target: 'http://www.sharingideas.cn:10000/', //对应自己的接口
-        target: 'http://localhost:8899/', // 本地测试
+        target: 'http://www.sharingideas.cn/', // 本地测试
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
