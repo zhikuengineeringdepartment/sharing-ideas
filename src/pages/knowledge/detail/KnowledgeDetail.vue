@@ -81,7 +81,6 @@
     </div>
 </template>
 
-//
 <script>
     import KnowledgeSection from './KnowledgeSection'
     // import KnowledgeSectionBlog from './KnowledgeSectionBlog'
